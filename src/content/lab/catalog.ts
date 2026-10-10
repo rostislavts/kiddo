@@ -1,0 +1,116 @@
+export const labTiles = [
+  {
+    slug: "prompts",
+    icon: "✦",
+    title: "Prompt Playground",
+    description: "Сглоби идея. Промени една част. Сравни истинските AI отговори.",
+    tone: "violet",
+  },
+  {
+    slug: "prompt-battles",
+    icon: "⚑",
+    title: "Prompt Battles",
+    description: "Три опита, ясна цел и твоята най-добра инструкция.",
+    tone: "peach",
+  },
+  {
+    slug: "bots",
+    icon: "🤖",
+    title: "Построй си бот",
+    description: "Дай му характер, правила и цел. После го тествай.",
+    tone: "mint",
+  },
+  {
+    slug: "agents",
+    icon: "⚙",
+    title: "Мини агенти",
+    description: "Мисия → инструмент → резултат. Ти задаваш правилата.",
+    tone: "blue",
+  },
+  {
+    slug: "agent-missions",
+    icon: "🚀",
+    title: "Агентски мисии",
+    description: "Тайно животно, музейна загадка и космически ремонт.",
+    tone: "peach",
+  },
+  {
+    slug: "knowledge",
+    icon: "▤",
+    title: "Knowledge Lab",
+    description: "Научи AI с карти и виж кое знание използва.",
+    tone: "mint",
+  },
+  {
+    slug: "detective",
+    icon: "⌕",
+    title: "AI детектив",
+    description: "Открий грешката. Потърси доказателство. Поправи отговора.",
+    tone: "yellow",
+  },
+  {
+    slug: "images",
+    icon: "🎨",
+    title: "Image Lab",
+    description: "Създай измислен свят и сравни своите изображения.",
+    tone: "pink",
+  },
+  {
+    slug: "vision",
+    icon: "◉",
+    title: "Vision Lab",
+    description: "Какво вижда AI? Сравни отговора с известните факти.",
+    tone: "blue",
+  },
+  {
+    slug: "games",
+    icon: "🎲",
+    title: "AI Game Master",
+    description: "Създай кратко приключение с герой, избори и край.",
+    tone: "violet",
+  },
+  {
+    slug: "escape-rooms",
+    icon: "🗝",
+    title: "AI Escape Rooms",
+    description: "Комбинирай уменията си, за да избягаш от Марс.",
+    tone: "peach",
+  },
+  {
+    slug: "projects",
+    icon: "✨",
+    title: "Creator Projects",
+    description: "Свържи бот, знания, агент или игра в своя творба.",
+    tone: "mint",
+  },
+] as const;
+export const creatorTemplates = {
+  tutor: { title: "Моят AI учител", features: ["bots", "knowledge"] },
+  "space-agent": { title: "Моят космически агент", features: ["agents"] },
+  "story-game": { title: "Моята игра с история", features: ["games"] },
+  "museum-guide": { title: "Моят AI музеен гид", features: ["bots", "knowledge"] },
+} as const;
+export const curatedImages = [
+  {
+    id: "library",
+    title: "Робот в библиотеката",
+    path: "/lab/library.png",
+    facts: [
+      "Виждат се три книги: червена, зелена и синя.",
+      "Роботът е вляво от масата.",
+      "На стената има кръгъл часовник.",
+    ],
+    question: "Какви цветове са книгите? Какво не можеш да разбереш със сигурност?",
+  },
+  {
+    id: "space",
+    title: "Космическа работилница",
+    path: "/lab/space.png",
+    facts: [
+      "Има две ракети.",
+      "Едната ракета е синя, а другата — оранжева.",
+      "На небето има три звезди.",
+    ],
+    question: "Колко ракети и звезди виждаш? Можеш ли да разбереш коя ракета е по-бърза?",
+  },
+] as const;

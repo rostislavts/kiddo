@@ -1,0 +1,65 @@
+# Local Docker services. Application migrations and seeds are managed by Drizzle.
+# CLI version used: 2.109.0
+project_id = "kiddo"
+
+[api]
+enabled = true
+port = 55321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 55322
+shadow_port = 55320
+major_version = 17
+health_timeout = "2m"
+
+[db.pooler]
+enabled = false
+port = 55329
+
+[db.migrations]
+enabled = false
+
+[db.seed]
+enabled = false
+
+[realtime]
+enabled = false
+
+[studio]
+enabled = false
+port = 55323
+
+[local_smtp]
+enabled = true
+port = 55324
+
+[storage]
+enabled = false
+
+[edge_runtime]
+enabled = false
+
+[analytics]
+enabled = false
+port = 55327
+
+[auth]
+enabled = true
+site_url = "http://localhost:3001"
+additional_redirect_urls = ["http://localhost:3001/auth/callback", "http://localhost:3001/auth/callback?next=/auth/reset-password"]
+jwt_expiry = 3600
+enable_signup = true
+enable_refresh_token_rotation = true
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+double_confirm_changes = true
+max_frequency = "1s"
+
+[auth.rate_limit]
+email_sent = 100

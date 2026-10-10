@@ -1,0 +1,17 @@
+.git/
+.next/
+.next-e2e/
+node_modules/
+.vercel/
+.test-data/
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+supabase/.temp/
+supabase/.branches/
+supabase/signing_keys.json
+.DS_Store

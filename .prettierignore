@@ -1,0 +1,14 @@
+node_modules
+.next
+package-lock.json
+ai-academy-product-requirements.md
+src/db/migrations/meta
+playwright-report
+test-results
+.env
+
+.next-e2e
+.test-data
+.vercel
+.env*
+ai-academy-ai-lab-delta-prd-v2.md
